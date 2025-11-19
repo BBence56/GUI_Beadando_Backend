@@ -18,4 +18,12 @@ public class Store {
     @Generated
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int storeId;
+
+    private double budget;
+
+    private int storage;
+
+    private double revenue;
+
+    private double expenses;
 }
