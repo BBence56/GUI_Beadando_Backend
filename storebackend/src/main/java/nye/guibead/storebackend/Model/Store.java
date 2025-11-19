@@ -1,13 +1,11 @@
 package nye.guibead.storebackend.Model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Generated;
 
+import java.util.List;
 
 
 @Entity
@@ -26,4 +24,7 @@ public class Store {
     private double revenue;
 
     private double expenses;
+
+    @OneToMany(mappedBy = "store")
+    private List<Product> products;
 }
