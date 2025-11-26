@@ -54,8 +54,9 @@ public class ProductService {
 
     // \Create
     public Product createProduct(Product product) {
-        return productRepository.save(product);
+        //todo
     }
+
 
     // \Read all
     public List<Product> getAllProducts() {
