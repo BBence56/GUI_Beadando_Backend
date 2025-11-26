@@ -25,6 +25,8 @@ public class Store {
 
     private double expenses;
 
+    private String location;
+
     @OneToMany(mappedBy = "store")
     private List<Product> products;
 }
