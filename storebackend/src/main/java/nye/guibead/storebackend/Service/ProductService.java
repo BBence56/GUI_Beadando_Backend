@@ -55,6 +55,7 @@ public class ProductService {
     // \Create
     public Product createProduct(Product product) {
         //todo
+        return productRepository.save(product);
     }
 
 
